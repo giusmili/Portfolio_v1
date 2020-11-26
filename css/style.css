@@ -1,0 +1,219 @@
+/*reset*/
+html{
+    scroll-behavior: smooth;
+  
+}
+html,body{
+    font: 16px 'Raleway',sans-serif;
+    margin: 0;
+    background-color: #fff;
+   
+}
+h1,h2,h3,p,ol,ul,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+:root{
+    --color-theme-1: #fbfdf4;
+    --color-theme-2:  #f2f7d9;
+    --color-theme-3: #222;
+ }
+ 
+ 
+ /* theme */
+ header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 0;
+     z-index:3;
+    background: var(--color-theme-1);
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+     
+ }
+
+ header ul{
+     width: calc(100% / 2 );
+     display: inline-block;
+     font-size: 0;
+ }
+ header ul:first-child li,header ul:last-child li{
+     text-transform: uppercase;
+ }
+ header ul:first-child li > a{
+     display:block;
+}
+ header ul:first-child li{
+     width: 250px;
+     text-align: center;
+}
+ header ul li a{
+     display: block;
+}
+ header ul li{
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 60px;
+}
+header ul+ul{
+    text-align: right;
+}
+header ul + ul > li{
+    width:calc(100% / 4 );
+    text-align: center;
+}
+header ul + ul > li i{
+    margin-right: calc(10px / 2);
+}
+header ul + ul > li:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.active{
+    background-color: rgba(0,0,0,0.1);
+}
+main{
+    margin-top: 50px;
+    overflow: hidden;
+    max-width: 1000;
+    margin:0 auto;
+}
+main section,footer{
+    height: 100vh;
+    padding: 10px;
+}
+
+/*background image*/
+main section:first-child{
+    background : url(../asset/mac.jpg) no-repeat fixed center center / cover;
+    position:relative;
+   
+}
+main section:first-child h1{
+    position: absolute;
+    top:calc(50% - 25%);
+    left:10px;
+    z-index:1;
+}
+main section:first-child p{
+    position: absolute;
+    top:40%;
+    left:10px;
+    z-index:2;
+    
+    font-size: 1rem;
+}
+main section:first-child a{
+    position: absolute;
+    top:48%;
+    left:10px;
+    z-index:2;
+    font-size: 1rem;
+    max-width: 250px;
+    padding: 10px;
+    background: rgba(235, 232, 232, 0.8);
+    text-align: center;
+    line-height: 45px;
+    color: var(--color-theme-3);
+    font-weight: normal;
+
+}
+
+main section h1,main section p,main section a{
+    color: var( --color-theme-1);
+    font-size: 3.5rem;
+    width: 100%;
+   
+}
+main section p,main section a{
+    font-size: 2rem;
+}
+main section article, main footer article{
+   
+        position: relative;
+        /* margin:-200px 0 0 -400px; */
+        left:50%;
+        top:50%; 
+        transform:translate(-50%,-50%);
+    
+}
+/*deuxieme section*/
+
+section:nth-of-type(2) h2, section:nth-of-type(3) h2, footer h2{
+    font-size: 2.5rem;
+    line-height: 60px;
+    text-align: center;
+    text-transform: capitalize; 
+}
+section:nth-of-type(2) ul,section:nth-of-type(3) ul,footer ul{
+    text-align: center;
+    font-size: 0;
+}
+section:nth-of-type(2) li, section:nth-of-type(3) li,footer li{
+    display: inline-block;
+    font-size: 2rem;
+    width: calc(100% / 4);
+    color: var(--color-theme-3);
+    
+}
+section:nth-of-type(2) li,section:nth-of-type(3) li,footer li{
+    padding: 10px;
+    margin-top: 80px;
+}
+footer li{
+    font-size: 1rem;
+}
+
+section:nth-of-type(3) li img{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 10px #222;
+}
+section:nth-of-type(2) li figcaption{
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px;
+    
+}
+section:nth-of-type(2) li figure figcaption > p{
+    color: var(--color-theme-3);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding:5px;
+}
+section:nth-of-type(2) li .fa{
+    font-size: 4rem;
+    padding:10px 0;
+}
+section:nth-of-type(2) li figure{
+text-transform: capitalize;
+}
+footer{
+    background: #222;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+footer li > .fa, footer li,footer h2{
+    margin-right: 5px;
+    color:var(--color-theme-1);
+}
+
+
+/*responsive*/
+
+
+
